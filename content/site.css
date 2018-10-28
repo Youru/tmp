@@ -1,0 +1,36 @@
+.fill-space{
+    padding: 3em;
+    text-align: center;
+    background: linear-gradient(to bottom, #38a3d1 0%,#90dffe 100%);
+}
+
+#form-1{
+    margin: 1em;
+}
+
+#form-1 button{
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 6em;
+    height: 3.5em;
+}
+
+#form-1 button.azure{
+    background-image: url("images/Azure.png");
+}
+
+#form-1 button.aws{
+    background-image: url("images/Aws.png");
+}
+
+#form-2 .aws,#form-2 .azure{
+    display: none;
+}
+
+#form-2[data-csp="aws"] .aws {
+    display: block;
+}
+
+#form-2[data-csp="azure"] .azure {
+    display: block;
+}
