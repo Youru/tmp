@@ -31,16 +31,16 @@
     background-image: url("images/Aws.png");
 }
 
-#form-1 .input-aws,#form-1 .input-azure{
+#form-1 div{
+    display: inline-block;
+}
+
+#form-1[data-csp="aws"] .input-azure {
     display: none;
 }
 
-#form-1[data-csp="aws"] .input-aws {
-    display: inline-block;
-}
-
-#form-1[data-csp="azure"] .input-azure {
-    display: inline-block;
+#form-1[data-csp="azure"] .input-aws {
+    display: none
 }
 
 .form-group{
