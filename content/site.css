@@ -4,8 +4,12 @@
     background: linear-gradient(to bottom, #38a3d1 0%,#90dffe 100%);
 }
 
-#form-1{
+#form-1,#form-2,#form-3{
     margin: 1em;
+}
+
+#form-2 div{
+    margin-bottom: 0.5em;
 }
 
 #form-1 button{
@@ -13,6 +17,10 @@
     background-size: auto;
     width: 6em;
     height: 3.5em;
+}
+
+#form-1 button.checked{
+ background-color: lightblue;
 }
 
 #form-1 button.azure{
@@ -23,14 +31,23 @@
     background-image: url("images/Aws.png");
 }
 
-#form-2 .aws,#form-2 .azure{
+#form-1 .input-aws,#form-1 .input-azure{
     display: none;
 }
 
-#form-2[data-csp="aws"] .aws {
-    display: block;
+#form-1[data-csp="aws"] .input-aws {
+    display: inline-block;
 }
 
-#form-2[data-csp="azure"] .azure {
-    display: block;
+#form-1[data-csp="azure"] .input-azure {
+    display: inline-block;
+}
+
+.form-group{
+    display: inline-block;
+}
+
+.form-group .form-control{
+    min-width: 5em;
+    display: inline-block;
 }

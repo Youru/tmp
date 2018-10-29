@@ -2,30 +2,54 @@
 <html>
 
 <head>
-    <title>Test Graphql</title>
+    <title>Inventory</title>
     <link rel="stylesheet" type="text/css" href="content/Vendor/Bootstrap.css">
     <link rel="stylesheet" type="text/css" href="content/site.css">
 </head>
 
 <body>
     <div class="fill-space">API INVENTORY</div>
-    <div id="form-1">
-        <button id="aws" class="btn aws"></button>
+    <div id="form-1" data-csp="aws">
+        <button id="aws" class="btn aws checked"></button>
         <button id="azure" class="btn azure"></button>
+        <div class="input-aws">
+            Account :
+            <input type="text">
+        </div>
+        <div class="input-azure">
+            Subscription Name :
+            <input type="text">
+        </div>
     </div>
-    <div id="form-2" data-csp="aws">
-        <div class="aws">
-            AccountId : <input type="text">
-            Environment : <input type="text">
+    <div id="form-2">
+        <div class="form-group">
+            <label for="metrics">Metrics:</label>
+            <select class="form-control" id="metrics">
+            </select>
         </div>
-        <div class="azure">
-            Subscription Name :<input type="text"> 
-            Environment :<input type="text">
+        <div class="form-group">
+            <label for="environments">Environment:</label>
+            <select class="form-control" id="environments">
+            </select>
         </div>
+        <div class="form-group">
+            <label for="departments">Department:</label>
+            <select class="form-control" id="departments">
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="regions">Region:</label>
+            <select class="form-control" id="regions">
+            </select>
+        </div>
+    </div>
+    <div id="form-3">
+
     </div>
     <!-- <button id="button-values">Get Values</button>
     <pre id="content-json"></pre> -->
 </body>
 <script src="./Script/Module/usages.js"></script>
 <script src="./Script/interaction.js"></script>
+
 </html>
